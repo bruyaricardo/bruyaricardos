@@ -1,0 +1,19 @@
+#include <stdio.h> 
+#include <pthread.h> 
+ 
+pthread_t t; 
+ 
+void* run(void* arg) 
+{ 
+  while(1) 
+  { 
+    printf("Hello\n"); 
+  } 
+} 
+ 
+main() 
+{ 
+  pthread_create(&t, 0, run, 0); 
+  pthread_kill(t,34); 
+  while(1); 
+} 
