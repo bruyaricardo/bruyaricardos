@@ -1,0 +1,6 @@
+    //CRect *inserectRect = [[CRect alloc] init];
+    CRect *inserectRect = [dorect intersectRect:myrect1 :myrect2];
+    [inserectRect print];
+  }
+  return 0;
+}
