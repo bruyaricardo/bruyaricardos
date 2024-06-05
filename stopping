@@ -1,0 +1,14 @@
+    public void stop() {
+        addItem("stopping the applet ");
+    }
+ 
+    public void destroy() {
+        addItem("unloading the applet");
+    }
+ 
+    void addItem(String word) {
+        System.out.println(word);
+        strBuffer.append(word);
+        repaint();
+    }
+ 
