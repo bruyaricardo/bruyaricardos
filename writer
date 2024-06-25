@@ -1,0 +1,24 @@
+import java.io.FileWriter;
+
+public class Main {
+
+  public static void main(String args[]) {
+
+    String data = "This is the data in the output file";
+
+    try {
+      //  FileWriter
+      FileWriter output = new FileWriter("output.txt");
+
+      // 
+      output.write(data);
+
+      // writer
+      output.close();
+    }
+
+    catch (Exception e) {
+      e.getStackTrace();
+    }
+  }
+}
